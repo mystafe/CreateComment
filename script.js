@@ -80,6 +80,14 @@ CreateComment = async (event) => {
 DeleteComment = async (event) => {
   event.preventDefault();
 
+  //confirm
+  const choice = confirm("Are you sure you want to delete this comment?");
+  if (!choice) {
+    return;
+  }
+
+  // find the closest div with class comment
+
   const commentDiv = event.target.closest(".comment");
 
   // within that div, find the div with class comment-id and get its text content
@@ -99,7 +107,7 @@ DeleteComment = async (event) => {
   );
 
   let result = await e.json();
-  console.log("comment is deleted");
+  alert("comment is deleted");
 
   comments = comments.filter((comment) => comment.id != commentId);
   FillHtmlComments(comments);
