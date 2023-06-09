@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Comment App</title>
+  </head>
+  <body>
+    <div class="commentCreate">
+      <h1>Create Comment</h1>
+      <form
+        name="createCommentForm"
+        method="Post"
+        onsubmit="CreateComment(event)"
+      >
+        <label for="name">Name</label>
+        <input type="text" name="name" value="Name Surname" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" value="ada@dad.com" />
+
+        <label for="comment">Comment</label>
+        <textarea name="body" id="body" cols="30" rows="10">
+This is a comment</textarea
+        >
+
+        <input type="submit" />
+      </form>
+    </div>
+
+    <div id="commentList"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

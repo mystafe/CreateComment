@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.commentCreate {
+  margin-bottom: 20px;
+}
+
+.commentCreate h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.commentCreate form {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentCreate label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.commentCreate input,
+.commentCreate textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.commentCreate input[type="submit"] {
+  background-color: #0b8e39;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.comments {
+  margin-bottom: 20px;
+}
+
+.comment {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-name,
+.comment-email,
+.comment-body {
+  margin-bottom: 5px;
+}
+
+.comment-name::before,
+.comment-email::before,
+.comment-body::before {
+  font-weight: bold;
+}
+
+.comment-name::before {
+  content: "Name: ";
+}
+
+.comment-email::before {
+  content: "Email: ";
+}
+
+.comment-body::before {
+  content: "Comment: ";
+}
+
+.comment {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#commentList .deleteBtn {
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 25%;
+  border: none;
+  background-color: transparent;
+  color: red !important;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.comment-id,
+.comment-name,
+.comment-email,
+.comment-body {
+  margin-bottom: 10px;
+}
